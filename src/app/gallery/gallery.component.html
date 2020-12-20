@@ -1,0 +1,5 @@
+<mat-grid-list cols="3" rowHeight="1:1" gutterSize="1%">
+    <mat-grid-tile class="pic" *ngFor="let image of images">
+        <img src="{{ image }}" (click)="openImage(image)">
+    </mat-grid-tile>
+</mat-grid-list>
